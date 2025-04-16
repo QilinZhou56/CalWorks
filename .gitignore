@@ -1,0 +1,12 @@
+# Ignore any folder with 'models' in the name
+**/*models*/
+
+# Ignore any folder with 'ocr_results' in the name
+**/*ocr_results*/
+
+# Ignore model files
+*.pth
+*.onnx
+
+# Ignore the .venv folder
+.venv/

@@ -1,56 +1,28 @@
-# LLM-CalWORKs
-LLM-CalWORKs is a lightweight, local large language model (LLM) application powered by Ollama
+# 🧾 CalWorks Semantic Search System
 
-
-It is designed to extract, summarize, and compare county-level assessments and findings from CalWORKs-related documents (e.g., Cal-CSA reports). Using models like phi3:mini or mistral running locally through Ollama, the tool enables:
-
-📄 Section-by-section document summarization
-
-🔍 Identification of county-specific barriers and strategies
-
-🔁 Comparison of “Summary of Findings” across counties
-
-🔒 Privacy-preserving analysis (since no cloud access is needed)
-
-This tool automates interpretation of PDF reports and supports CalWORKs researchers, analysts, and program evaluators by making lengthy county submissions more accessible and comparable.
-
-
-## 🛠️ Setup Instructions
-
-This tool runs **entirely locally**, no OpenAI API or cloud connection required.
-
-### Requirements
-
-- Python 3.8+
-- [Ollama](https://ollama.com/download)
-- Model: `phi3:mini`
+A semantic search and question-answering system for exploring California Office of Administrative Resources (CalOAR) and CalWORKs County Self-Assessment (Cal-CSA) documents using vector embeddings, Milvus, and GPT-4.
 
 ---
 
-### Install Python Dependencies
+## 🔍 Project Overview
 
-```bash
-pip install -r requirements.txt
-```
+This project allows users to query complex administrative documents—like the CalWORKs CSA—for specific information on:
 
-### In your terminal, start the model by running
+- Demographics and community profiles
+- Housing affordability and poverty indicators
+- Eligibility and program services
+- Client engagement and partner collaboration
+- System barriers and policy recommendations
 
-```bash
-ollama run phi3:mini
-```
+The system uses OpenAI embeddings + Milvus for vector search and GPT-4 to generate concise, accurate answers.
 
-### On the directory of ```summarizer.py```, run the summarizer 
+---
 
-```bash
-python3 summarizer.py -p "path/to/Cal-CSA_Orange.pdf" --prompt "Summarize"
-```
+## 💡 Key Features
 
-### A CSV file will be generated
-It includes:
-
-PDF: Source file name
-
-Section: Section title (e.g., "Demographics", "Section 1. Outcomes")
-
-Summary: LLM-generated text (or raw text if Section 10, which is the summary section)
+- **Semantic Search**: Retrieve the most relevant blocks of text from CalOAR documents using vector embeddings (`text-embedding-3-small`).
+- **LLM-Enhanced Answers**: Use GPT-4 to synthesize human-readable answers from top matches.
+- **Section-Aware Retrieval**: Directly reference document sections like `"Demographic Analysis"` or `"Section 3"`.
+- **Gradio UI**: Lightweight frontend for interactive exploration and Q&A.
+- **Inference Time Feedback**: Display backend processing time to users for transparency.
 

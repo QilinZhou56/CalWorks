@@ -6,7 +6,6 @@ from tqdm import tqdm
 from pymilvus import connections, FieldSchema, CollectionSchema, DataType, Collection, utility
 from openai import OpenAI
 
-# ========== CONFIG ==========
 JSON_PATH = "./formatted_outputs/page_block_text_with_geometry.json"
 COLLECTION_NAME = "cal_works_clause_index_enhanced"
 OPENAI_MODEL = "text-embedding-3-small"
@@ -14,7 +13,6 @@ EMBED_DIM = 1536
 MILVUS_HOST = "localhost"
 MILVUS_PORT = "19530"
 BATCH_SIZE = 10
-# ============================
 
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 if not client.api_key:
@@ -76,7 +74,7 @@ for page in pages:
             "bbox": json.dumps(buffer[0]["region_poly"])
         })
 
-print(f"✅ Extracted {len(clauses)} merged text blocks from OCR.")
+print(f"Extracted {len(clauses)} merged text blocks from OCR.")
 
 # Step 2: Batch embed using OpenAI API
 def get_openai_embeddings(text_list):
@@ -88,7 +86,7 @@ def get_openai_embeddings(text_list):
             vectors = [d.embedding for d in response.data]
             all_embeddings.extend(vectors)
         except Exception as e:
-            print(f"⚠️ Error at batch {i}: {e}")
+            print(f"Error at batch {i}: {e}")
             time.sleep(5)
             continue
     return np.array(all_embeddings)
@@ -132,4 +130,3 @@ collection.insert([
 ])
 collection.load()
 
-print(f"✅ Milvus collection '{COLLECTION_NAME}' built with {len(clauses)} entries.")

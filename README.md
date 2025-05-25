@@ -54,7 +54,7 @@ flowchart TD
 
   C4 --> C4a["chunked_output.xlsx"]
   C4 --> C4b["query_log.json"]
-
+```
 1. pdfs/
 Contains the raw Cal-CSA PDFs on the website.
 

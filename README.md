@@ -69,7 +69,7 @@ Runs the semantic search system as a Gradio-powered web app.
 
 ## 📘 Detailed Instructions
 
-The current GitHub repository provides reusable modules and a `app.py` interface. Many file paths point to Google Drive, as the system was developed in Colab and stores ChromaDB in the cloud for convenience. 
+The current GitHub repository provides reusable modules and an `app.py` interface. Many file paths point to Google Drive, as the system was developed in Colab and stores ChromaDB in the cloud for convenience. 
 
 External users can adapt the code by updating path references to match their environment. For **CDSS team members**, a fully configured version is available, no path changes are required.
 

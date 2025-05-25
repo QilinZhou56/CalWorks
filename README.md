@@ -30,7 +30,6 @@ The system uses OpenAI embeddings + Milvus for vector search and GPT-4 to genera
 
 ```mermaid
 flowchart TB
-flowchart TB
   A[CalWorks]
   A --> B[pdfs]
   A --> C[pipeline]

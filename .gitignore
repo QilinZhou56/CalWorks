@@ -7,7 +7,6 @@
 # Ignore model files
 *.pth
 *.onnx
-*.png
 
 # Ignore the .venv folder
 .venv/

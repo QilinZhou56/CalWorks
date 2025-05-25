@@ -1,4 +1,6 @@
-#![image](https://github.com/user-attachments/assets/e7dcf673-2a0b-4a86-8b1c-0f4723d0bcae) CalWorks Semantic Search System
+![image](https://github.com/user-attachments/assets/e7dcf673-2a0b-4a86-8b1c-0f4723d0bcae) 
+
+# CalWorks Semantic Search System
 
 A semantic search and question-answering system for exploring California Office of Administrative Resources (CalOAR) and CalWORKs County Self-Assessment (Cal-CSA) documents using vector embeddings, Milvus, and GPT-4.
 

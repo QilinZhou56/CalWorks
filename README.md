@@ -17,7 +17,7 @@ This project allows users to query complex administrative documents—like the C
 - Client engagement and partner collaboration
 - System barriers and policy recommendations
 
-The system uses OpenAI embeddings + Milvus for vector search and GPT-4 to generate concise, accurate answers.
+The system uses OpenAI embeddings + ChromaDB for vector search and GPT-4 to generate concise, accurate answers.
 
 ---
 
@@ -63,3 +63,14 @@ Reusable Python modules for building the vector DB, preprocessing, and web UI co
 
 5. pipeline/Output/
 Results of pipeline runs (chunked outputs, query logs, etc.).
+
+## 📘 Detailed Instructions
+
+For CDSS team members, full setup and usage documentation is available in the **shared Google Drive folder**, including:
+- How to run the Colab pipelines  
+- How to upload and embed new CSA reports  
+- How to interpret chunked outputs and use the Gradio search interface
+
+Please refer to that folder for internal guidance and updated materials.
+📄 **[Open the CalWORKs Semantic Search User Guide](https://docs.google.com/document/d/11MolHVaaXLOZpZoYvNhsNJpvJgEAkjIRv0dqgxb6PnE/edit?tab=t.0)**
+

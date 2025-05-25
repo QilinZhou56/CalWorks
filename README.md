@@ -29,7 +29,7 @@ The system uses OpenAI embeddings + Milvus for vector search and GPT-4 to genera
 ## GitHub Folder Structure 
 
 ```mermaid
-flowchart TD
+flowchart TB
   A[CalWorks] --> B[pdfs]
   A --> C[pipeline]
 

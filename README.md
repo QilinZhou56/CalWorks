@@ -1,4 +1,5 @@
-![image](https://github.com/user-attachments/assets/e7dcf673-2a0b-4a86-8b1c-0f4723d0bcae) 
+![image](https://github.com/user-attachments/assets/34a219f6-5a58-43e5-a0e4-54c004dfb5aa)
+
 
 # CalWorks Semantic Search System
 

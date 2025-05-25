@@ -66,11 +66,15 @@ Results of pipeline runs (chunked outputs, query logs, etc.).
 
 ## 📘 Detailed Instructions
 
-For CDSS team members, full setup and usage documentation is available in the **shared Google Drive folder**, including:
-- How to run the Colab pipelines  
-- How to upload and embed new CSA reports  
-- How to interpret chunked outputs and use the Gradio search interface
+The current GitHub repository provides reusable modules and a minimal `app.py` interface. Many file paths point to Google Drive, as the system was developed in Colab and stores ChromaDB in the cloud for convenience. 
 
-Please refer to that folder for internal guidance and updated materials.
-📄 **[Open the CalWORKs Semantic Search User Guide](https://docs.google.com/document/d/11MolHVaaXLOZpZoYvNhsNJpvJgEAkjIRv0dqgxb6PnE/edit?tab=t.0)**
+External users can adapt the code by updating path references to match their environment. For **CDSS team members**, a fully configured version is available—no path changes are required.
+
+📄 Full setup instructions are available in the shared Google Drive folder, covering:
+- Running Colab pipelines  
+- Uploading and embedding new CSA reports  
+- Interpreting chunked outputs and using the Gradio search interface
+
+🔗 **[Open the CalWORKs Semantic Search User Guide](https://docs.google.com/document/d/11MolHVaaXLOZpZoYvNhsNJpvJgEAkjIRv0dqgxb6PnE/edit?tab=t.0)**
+
 

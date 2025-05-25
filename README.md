@@ -33,27 +33,27 @@ flowchart TD
   A[CalWorks] --> B[pdfs]
   A --> C[pipeline]
 
-  B --> B1["(Cal-CSA)Orange.pdf 03-22-40-516.pdf"]
-  B --> B2["Cal-CSA-Inyo-Report-County.pdf"]
+  B --> B1["Orange PDF"]
+  B --> B2["Inyo PDF"]
 
   C --> C1[Asset]
   C --> C2[Code]
   C --> C3[Modules]
   C --> C4[Output]
 
-  C1 --> C1a["[GIS]ca_counties_outcome.csv"]
-  C1 --> C1b[calworks_logo.jpeg]
-  C1 --> C1c[cdss-logo.png]
+  C1 --> C1a["ca_counties_outcome.csv"]
+  C1 --> C1b["calworks_logo.jpeg"]
+  C1 --> C1c["cdss-logo.png"]
 
-  C2 --> C2a["[Development]CalWorks_Pipeline.ipynb"]
-  C2 --> C2b["[Final]CalWorks_Pipeline.ipynb"]
+  C2 --> C2a["Development_Pipeline.ipynb"]
+  C2 --> C2b["Final_Pipeline.ipynb"]
 
-  C3 --> C3a[build_vectordb.py]
-  C3 --> C3b[preprocess_documents.py]
-  C3 --> C3c[web_interface_components.py]
+  C3 --> C3a["build_vectordb.py"]
+  C3 --> C3b["preprocess_documents.py"]
+  C3 --> C3c["web_interface_components.py"]
 
-  C4 --> C4a[chunked_sip_csa_output.xlsx]
-  C4 --> C4b[query_log.json]
+  C4 --> C4a["chunked_output.xlsx"]
+  C4 --> C4b["query_log.json"]
 
 1. pdfs/
 Contains the raw Cal-CSA PDFs on the website.

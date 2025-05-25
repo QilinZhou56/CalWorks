@@ -1,5 +1,6 @@
 # Revised QA system with county-wise comparison and map-reduce summarization
 import os
+import getpass
 import gradio as gr
 import json
 import ast
@@ -14,6 +15,13 @@ from langchain.chains.summarize import load_summarize_chain
 from langchain.docstore.document import Document as LCDocument
 from langchain_community.utilities import SerpAPIWrapper
 from pipeline.Modules.web_interface_components import plot_outcome_map, extract_text_from_file
+
+# Enter authentication keys
+OPENAI_API_KEY = getpass.getpass("🔑 Enter your OpenAI API key: ")
+SERP_API_KEY = getpass.getpass("🔑 Enter your SERP API key: ")
+
+os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
+os.environ["SERPAPI_API_KEY"] = SERP_API_KEY
 
 # Config
 PERSIST_DIR = "/content/drive/MyDrive/LLM/CalWorks/Vector Database/Output/chroma_sip_csa_db"

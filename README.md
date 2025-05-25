@@ -27,6 +27,7 @@ The system uses OpenAI embeddings + Milvus for vector search and GPT-4 to genera
 - **Inference Time Feedback**: Display backend processing time to users for transparency.
 
 ## GitHub Folder Structure 
+
 ```mermaid
 flowchart TD
   A[CalWorks] --> B[pdfs]
